@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="maindiv bg-dark d-flex justify-content-center align-items-center">
+
+        <div class="calculator-body bg-dark">
+            <h1 class="heading" style="text-align: center; margin-top: 30px; color: white;" >Calculator</h1> <br>
+            <div class="input-box">
+                <input id="numbers" type="text"  placeholder="0" readonly >
+                </div>
+                <div class="number-grid " style="margin-top: 50px;">
+                    <div class="row">
+                    <div class="cell-body col ms-3" id="seven" onclick="displayData('7')"><button class="btn btn-outline-secondary text-light">7</button></div>
+                    <div class="cell-body col" id="eight"onclick="displayData('8')"><button class="btn btn-outline-secondary text-light">8</button></div>
+                    <div class="cell-body col" id="nine"onclick="displayData('9')"><button class="btn btn-outline-secondary text-light">9</button></div>
+                    <div class="cell-body col" id="mul"onclick="displayData('*')"><button class="btn btn-outline-secondary text-light">*</button></div>
+                </div>
+
+                <div class="row">
+                    <div class="cell-body col ms-3" id="four" onclick="displayData('4')"><button class="btn btn-outline-secondary text-light">4</button></div>
+                    <div class="cell-body col" id="five" onclick="displayData('5')"><button class="btn btn-outline-secondary text-light">5</button></div>
+                    <div class="cell-body col" id="six" onclick="displayData('6')"><button class="btn btn-outline-secondary text-light">6</button></div>
+                    <div class="cell-body col" id="minus" onclick="displayData('-')"><button class="btn btn-outline-secondary text-light">&#8722</button></div>
+                </div>
+
+                <div class="row">
+                    <div class="cell-body col ms-3" id="one" onclick="displayData('1')"><button class="btn btn-outline-secondary text-light">1</button></div>
+                    <div class="cell-body col" id="tw0" onclick="displayData('2')"><button class="btn btn-outline-secondary text-light">2</button></div>
+                    <div class="cell-body col" id="three" onclick="displayData('3')"><button class="btn btn-outline-secondary text-light">3</button></div>
+                    <div class="cell-body col" id="plus" onclick="displayData('+')"><button class="btn btn-outline-secondary text-light">&#43</button></div>
+                </div>
+
+                <div class="row">
+                    <div class="cell-body col ms-3" id="ac"onclick="clearValue()" ><button class="btn btn-outline-secondary text-danger">AC</button></div>
+                    <div class="cell-body col" id="zero" onclick="displayData('0')"><button class="btn btn-outline-secondary text-light">0</button></div>
+                    <div class="cell-body col"  id="divide" onclick="displayData('/')" ><button class="btn btn-outline-secondary text-light">&#247</button></div>
+                    <div class="cell-body col" id="equal" onclick="callResult()"><button class="btn btn-outline-secondary text-light">&#61</button></div>
+                </div>
+                <div class="row">
+                    <div class="cell-body col ms-3" id="delete"onclick="delLastValue()" ><button class="btn btn-outline-secondary text-danger" >&#9003</button></div>
+                    
+                
+                </div>
+                </div>
+            <!-- </div> -->
+
+        </div>
+
+
+    </div>
+    
+</body>
+<script src="./main.js"></script>
+</html>
